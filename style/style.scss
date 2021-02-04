@@ -1,0 +1,469 @@
+$bodyFont: 'Lato', 'Helvetica', 'Arial', sans-serif;
+$gold: #CFB652;
+$darkGrey: #181818;
+
+@import "setup";
+
+
+// General Styles
+@font-face {
+	font-family: carolinea;
+	src: url(../fonts/Carolinea.otf)
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 15px;
+	font-size: 1.5em;
+	background: none;
+	font-family: $bodyFont;
+}
+
+section {
+	padding: 80px;
+}
+
+.wrapper {
+	width: 75%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	letter-spacing: 1.6px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h1 {
+	font-size: 15rem;
+	font-family: Carolinea;
+	font-weight: 300;
+	margin: 10px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 12rem;
+	font-family: Carolinea;
+	font-weight: 300;
+
+	margin: 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+h5 {
+	font-size: 1.4rem;
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.8;
+	
+}
+
+p.jane {
+	text-align: center;
+}
+
+.titleBox {
+	margin: 0 auto;
+	width: 140px;
+	
+}
+
+h5.titleText {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border: 2px solid black;
+	display: inline-block;
+
+}
+
+
+// Header
+nav {
+	background: white;
+	padding: 10px;
+
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		a {
+			color: black;
+		}
+	}
+}
+
+ul.nav {
+	display: flex;
+	flex-flow: row wrap;
+
+	li {
+		position: relative;
+	}
+
+	li a {
+		padding: 0 15px;
+		color: black;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		transition: all .3s;
+		text-align: center;
+
+		&:hover {
+			color: $gold;
+		}
+	}
+
+	li a.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(white, 0.9);
+		opacity: 0;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+header {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+}
+
+header.main {
+	height: calc(100vh - 50px);
+	background-image: url(../images/hero.jpg);
+
+}
+
+.headerText {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+// Header Other Pages - The Weird Pair
+header.theCouple {
+	height: 370px;
+	background-image: url(../images/Cover_BW.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+}
+
+// Header Other Pages - Maui
+header.maui {
+	height: 370px;
+	background-image: url(../images/maui.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+}
+
+// Date
+.date {
+	padding-bottom: 100px;
+}
+
+// Details
+.weddingDetails {
+	background: url(../images/details.jpeg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding-top: 100px;
+
+	img.flower {
+		position: absolute;
+		left: calc(50% - 75px);
+		top: -53px;
+		width: 150px;
+
+	}
+}
+
+.detailsBlock {
+	background-color: white;
+	width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+
+	
+	h5 {
+		margin: 40px 0 5px 0;
+		font-weight: 700;
+	}
+
+	p {
+		margin: 0;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+}
+
+.detailsButtons {
+	margin: 35px auto 25px auto;
+	width: 55%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+
+
+	.button {
+		display: flex;
+
+		a {
+			height: 35px;
+			width: 140px;
+			margin: auto;
+			color: white;
+			text-transform: uppercase;
+			background: $gold;
+			font-size: 1.3rem;
+			padding: 10px;
+			transition: all .3s;
+
+			&:hover {
+				background: $darkGrey;
+			}
+			
+		}
+	}
+
+	div.rsvp {
+		position: relative;
+
+		a.soon {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			opacity: 0;
+			background: rgba(white, .7);
+			color: $darkGrey;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+
+	
+
+
+}
+
+
+
+// After party
+.afterParty {
+	text-align: center;
+}
+
+
+// Story
+.story {
+	text-align: center;
+}
+
+// Pictures 
+.picture {
+	height: 400px;
+	background-image: url(../images/us-1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+// Bio
+.bio {
+
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+	}
+}
+
+.subBio {
+	width: 45%;
+	text-align: justify;
+
+}
+
+
+// Accomodation
+.accomodation {
+	padding-bottom: 0;
+	text-align: center;
+}
+
+ul.acc {
+	margin: 50px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+	li {
+		width: 31%;
+		text-align: center;
+
+		.accPicture {
+			width: 100%;
+			height: 300px;
+			background-size: cover;
+			background-position: center;
+			position: relative;
+
+		}
+
+		.palms {
+			background-image: url(../images/palms.jpg);	
+		}
+		.manakai {
+			background-image: url(../images/manakai.jpg);	
+		}
+		.kihei {
+			background-image: url(../images/kihei.jpg);	
+		}
+	}
+
+}
+
+a.accButton {
+	padding: 10px 20px;
+	background-color: $darkGrey;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	letter-spacing: 1.8px;
+	display: inline-block;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+// Excursions
+.excursions {
+	h3 {
+		padding: 30px 0;
+		background-color: $gold;
+		color: white;
+		text-align: center;
+		letter-spacing: 1.5px;
+		line-height: 1.5;
+	}
+}
+
+
+// Footer
+footer {
+	
+	// background-image: url(../images/Black-Screen-13.jpg);
+	// background-size: cover;
+	background: #181818;
+	text-align: center; 
+	padding: 20px 0;
+	color: grey;
+
+	p {
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		letter-spacing: 3px;
+		a {
+			color: grey;
+		}
+	}
+
+	img.icon {
+		width: 150px;
+		margin: 20px;
+
+	}
+
+}
+
+
+
+// Responsive --------------------------------
+
+/* Portrait tablet and small desktops */
+@media (max-width: 980px) {
+	.wrapper {
+		width: 95%;
+	}
+}
+
+@media (max-width: 800px) {
+	.detailsBlock {
+		width: 100%;
+	}
+}
+
+@media (max-width: 780px) {
+	nav .wrapper {
+		flex-flow: column;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 700px) {
+	ul.acc {
+		flex-flow: column wrap;
+
+		li {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	
+}
+
+@media (max-width: 560px) {
+
+}
+
+
+
