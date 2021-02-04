@@ -346,6 +346,7 @@ header.theCouple {
   background-image: url(../images/Cover_BW.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: scroll;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
